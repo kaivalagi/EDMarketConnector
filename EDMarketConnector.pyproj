@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91b2e03e-add5-42fe-9c4c-7b84e39b0e36}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>EDMarketConnector.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>CondaEnv|CondaEnv|edmc</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".mypy.ini" />
+    <Content Include="coriolis-data\.eslintrc.js" />
+    <Content Include="coriolis-data\generate_distribution.js" />
+    <Content Include="coriolis-data\modifications\index.js" />
+    <Content Include="coriolis-data\modules\index.js" />
+    <Content Include="coriolis-data\ships\index.js" />
+    <Content Include="coriolis-data\spec\data-spec.js" />
+    <Content Include="docs\Licenses\py2exe\LICENSE.txt" />
+    <Content Include="docs\Licenses\py2exe\MIT-License.txt" />
+    <Content Include="docs\Licenses\py2exe\MPL2-License.txt" />
+    <Content Include="docs\Licenses\python-packages\pywin32\adodbapi\license.txt" />
+    <Content Include="docs\Licenses\python-packages\pywin32\com\License.txt" />
+    <Content Include="docs\Licenses\python-packages\pywin32\Pythonwin\License.txt" />
+    <Content Include="docs\Licenses\python-packages\pywin32\Pythonwin\Scintilla\License.txt" />
+    <Content Include="docs\Licenses\python-packages\pywin32\win32\License.txt" />
+    <Content Include="docs\Licenses\python-packages\urllib3\LICENSE.txt" />
+    <Content Include="docs\Licenses\python.org\LICENSE.txt" />
+    <Content Include="docs\Licenses\WiXtoolset\LICENSE.TXT" />
+    <Content Include="EDMarketConnector.ico" />
+    <Content Include="img\Balance.png" />
+    <Content Include="img\mac.png" />
+    <Content Include="img\mac_dark.png" />
+    <Content Include="img\UI-annotated.png" />
+    <Content Include="img\UI-Athanasius-101-odyssey-docked-onfoot-cooled-down-l.png" />
+    <Content Include="img\win.png" />
+    <Content Include="img\win_dark.png" />
+    <Content Include="img\win_transparent.png" />
+    <Content Include="io.edcd.EDMarketConnector.png" />
+    <Content Include="requirements-dev.txt" />
+    <Content Include="requirements.txt" />
+    <Content Include="resources\EDMC_Installer_Config_template.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="build.py" />
+    <Compile Include="collate.py" />
+    <Compile Include="commodity.py" />
+    <Compile Include="companion.py" />
+    <Compile Include="config\darwin.py" />
+    <Compile Include="config\linux.py" />
+    <Compile Include="config\windows.py" />
+    <Compile Include="config\__init__.py" />
+    <Compile Include="constants.py" />
+    <Compile Include="coriolis-data\modules\mod.py" />
+    <Compile Include="coriolis-update-files.py" />
+    <Compile Include="dashboard.py" />
+    <Compile Include="debug_webserver.py" />
+    <Compile Include="docs\examples\click_counter\load.py" />
+    <Compile Include="docs\examples\plugintest\load.py" />
+    <Compile Include="docs\examples\plugintest\SubA\__init__.py" />
+    <Compile Include="EDMarketConnector.py" />
+    <Compile Include="EDMC.py" />
+    <Compile Include="EDMCLogging.py" />
+    <Compile Include="edmc_data.py" />
+    <Compile Include="edshipyard.py" />
+    <Compile Include="hotkey\darwin.py" />
+    <Compile Include="hotkey\linux.py" />
+    <Compile Include="hotkey\windows.py" />
+    <Compile Include="hotkey\__init__.py" />
+    <Compile Include="installer.py" />
+    <Compile Include="journal_lock.py" />
+    <Compile Include="killswitch.py" />
+    <Compile Include="l10n.py" />
+    <Compile Include="loadout.py" />
+    <Compile Include="monitor.py" />
+    <Compile Include="myNotebook.py" />
+    <Compile Include="outfitting.py" />
+    <Compile Include="plug.py" />
+    <Compile Include="plugins\coriolis.py" />
+    <Compile Include="plugins\eddn.py" />
+    <Compile Include="plugins\edsm.py" />
+    <Compile Include="plugins\edsy.py" />
+    <Compile Include="plugins\inara.py" />
+    <Compile Include="plugins\spansh_core.py" />
+    <Compile Include="prefs.py" />
+    <Compile Include="protocol.py" />
+    <Compile Include="scripts\find_localised_strings.py" />
+    <Compile Include="scripts\killswitch_test.py" />
+    <Compile Include="scripts\pip_rev_deps.py" />
+    <Compile Include="shipyard.py" />
+    <Compile Include="stats.py" />
+    <Compile Include="td.py" />
+    <Compile Include="tests\config\test_config.py" />
+    <Compile Include="tests\config\_old_config.py" />
+    <Compile Include="tests\EDMCLogging.py\test_logging_classvar.py" />
+    <Compile Include="tests\journal_lock.py\test_journal_lock.py" />
+    <Compile Include="tests\killswitch.py\test_apply.py" />
+    <Compile Include="tests\killswitch.py\test_killswitch.py" />
+    <Compile Include="theme.py" />
+    <Compile Include="timeout_session.py" />
+    <Compile Include="ttkHyperlinkLabel.py" />
+    <Compile Include="update.py" />
+    <Compile Include="util\text.py" />
+    <Compile Include="util_ships.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="config" />
+    <Folder Include="coriolis-data" />
+    <Folder Include="coriolis-data\modifications" />
+    <Folder Include="coriolis-data\modules" />
+    <Folder Include="coriolis-data\ships" />
+    <Folder Include="coriolis-data\spec" />
+    <Folder Include="docs\" />
+    <Folder Include="docs\examples\" />
+    <Folder Include="docs\examples\click_counter" />
+    <Folder Include="docs\examples\plugintest" />
+    <Folder Include="docs\examples\plugintest\SubA" />
+    <Folder Include="docs\Licenses\" />
+    <Folder Include="docs\Licenses\py2exe" />
+    <Folder Include="docs\Licenses\python-packages\" />
+    <Folder Include="docs\Licenses\python-packages\pywin32\" />
+    <Folder Include="docs\Licenses\python-packages\pywin32\adodbapi" />
+    <Folder Include="docs\Licenses\python-packages\pywin32\com" />
+    <Folder Include="docs\Licenses\python-packages\pywin32\Pythonwin" />
+    <Folder Include="docs\Licenses\python-packages\pywin32\Pythonwin\Scintilla" />
+    <Folder Include="docs\Licenses\python-packages\pywin32\win32" />
+    <Folder Include="docs\Licenses\python-packages\urllib3" />
+    <Folder Include="docs\Licenses\python.org" />
+    <Folder Include="docs\Licenses\WiXtoolset" />
+    <Folder Include="hotkey" />
+    <Folder Include="img" />
+    <Folder Include="plugins" />
+    <Folder Include="resources" />
+    <Folder Include="scripts" />
+    <Folder Include="tests\" />
+    <Folder Include="tests\config" />
+    <Folder Include="tests\EDMCLogging.py" />
+    <Folder Include="tests\journal_lock.py" />
+    <Folder Include="tests\killswitch.py" />
+    <Folder Include="util" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|edmc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
