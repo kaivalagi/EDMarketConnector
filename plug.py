@@ -121,8 +121,8 @@ class Plugin:
 
                 return appitem
 
-            except Exception:
-                logger.exception(f'Failed for Plugin "{self.name}"')
+            except Exception as ex:
+                logger.exception(f'Failed for Plugin "{self.name}"\n{ex}')
 
         return None
 
